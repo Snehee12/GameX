@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+body {
+  background: #0a0a0a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Animated Background */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(60, 10, 80, 0.9) 10%, rgba(10, 0, 30, 1) 80%);
+  z-index: -2;
+}
+
+/* Purple Glow Effect */
+body::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+  opacity: 0.2;
+  z-index: -1;
+}
+
+/* Form Container */
+form {
+  background: rgba(20, 20, 30, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(170, 0, 255, 0.5);
+  text-align: center;
+  width: 350px;
+  position: relative;
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px -13px;
+  border: 2px solid rgba(170, 0, 255, 0.4);
+  border-radius: 5px;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+  outline: none;
+  font-family:"Poppins", sans-serif;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+input:focus {
+  border-color: #a000ff;
+  box-shadow: 0 0 10px #a000ff;
+}
+
+/* Submit Button */
+input[type="submit"] {
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+  padding: 12px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+input[type="submit"]:hover {
+  background: linear-gradient(135deg, #a000ff, #6a00ff);
+  box-shadow: 0 0 15px #a000ff;
+}
+
+/* Subtle Glowing Animation */
+@keyframes neonGlow {
+  0% {
+    box-shadow: 0 0 10px rgba(170, 0, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(170, 0, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(170, 0, 255, 0.5);
+  }
+}
+
+form {
+  animation: neonGlow 2s infinite alternate;
+}
