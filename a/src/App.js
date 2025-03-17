@@ -2,7 +2,7 @@ import "./styles/styling.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Navbar from "./components/navbar";
-import {HomePage} from "./pages/home";
+import {HomePage} from "./pages/HomePage";
 import {Form} from "./pages/login";
 
 function App() {
@@ -17,10 +17,10 @@ function App() {
 
   return (
     <Router>
-      <Navbar username={username} />
+      {/* <Navbar username={username} /> */}
       <Routes>
-        <Route path="/" element={<HomePage username={username} />} />
-        <Route path="/login" element={<Form setUsername={setUsername} />} />
+        <Route path="/" element={<HomePage/>} />
+        {/* <Route path="/login" element={<Form setUsername={setUsername} />} /> */}
       </Routes>
     </Router>
   );
