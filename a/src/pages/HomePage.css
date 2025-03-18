@@ -11,33 +11,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 15px;
-    background: rgba(170, 0, 255, 0.5);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-  }
-  
-  .nav-buttons button {
-    background: transparent;
-    border: none;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-  }
+    /* width: 100%; */
+  } 
   
   .main-content {
     display: flex;
     width: 100%;
     margin-top: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
     height: calc(100vh - 60px);
   }
   

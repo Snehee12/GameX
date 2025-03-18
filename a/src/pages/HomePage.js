@@ -1,21 +1,13 @@
 import React from 'react';
 import './HomePage.css';
 import {Post} from '../components/ui/Post';
+import {Navbar} from '../components/navbar';
 
 export const HomePage = () => {
   return (
     <div className="home-container">
       {/* Navbar */}
-      <nav className="navbar">
-        <h2>Clover</h2>
-        <div className="nav-buttons">
-          <button>Home</button>
-          <button>Explore</button>
-          <button>Jobs</button>
-          <button>Messages</button>
-          <button>Profile</button>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Main Layout */}
       <div className="main-content">
