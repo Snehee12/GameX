@@ -28,7 +28,7 @@ body {
     background: rgba(50, 50, 50, 0.8);
     padding: 15px;
     border-radius: 10px;
-    height: 100%;
+    height: fit-content;
     overflow-y: auto;
   }
   

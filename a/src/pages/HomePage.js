@@ -2,6 +2,7 @@ import React from 'react';
 import './HomePage.css';
 import {Post} from '../components/ui/Post';
 import {Navbar} from '../components/navbar';
+import { LeftSidebar } from '../components/Left-Sidebar';
 
 export const HomePage = () => {
   return (
@@ -12,13 +13,7 @@ export const HomePage = () => {
       {/* Main Layout */}
       <div className="main-content">
         {/* Left Sidebar - Profile Info */}
-        <aside className="left-sidebar">
-          <div className="profile-card">
-            <img src="https://via.placeholder.com/80" alt="profile" className="profile-pic" />
-            <h3>John Doe</h3>
-            <p>Professional Gamer & Streamer</p>
-          </div>
-        </aside>
+        <LeftSidebar />
 
         {/* Center - Posts Feed */}
         <main className="feed">

@@ -1,0 +1,97 @@
+/* Define theme colors */
+/* :root {
+    --primary-color: #8a2be2;  /* Purple */
+    /* --secondary-color: #4b0082; /* Darker purple */
+    /* --text-color: #fff; */
+  /* } */ 
+  
+  /* Left Sidebar Container */
+  .left-sidebar {
+    background: var(--secondary-color);
+    color: var(--text-color);
+    padding: 20px;
+    margin: 10px; /* Ensures only 10px margin */
+    border-radius: 10px;
+    width: 250px;
+    box-sizing: border-box;
+  }
+  
+  /* Profile Card */
+  .profile-card {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 20px;
+  }
+  
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    margin-bottom: 10px;
+  }
+  
+  .profile-card h3 {
+    margin: 5px 0;
+    font-size: 20px;
+  }
+  
+  .profile-card p {
+    font-size: 14px;
+    opacity: 0.9;
+  }
+  
+  /* Stats Section */
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
+  
+  .stat {
+    text-align: center;
+  }
+  
+  .stat .number {
+    font-weight: bold;
+    display: block;
+    font-size: 14px;
+  }
+  
+  .stat .label {
+    font-size: 12px;
+    opacity: 0.8;
+  }
+   
+  /* Additional Info Section */
+  .additional-info h4 {
+    margin-bottom: 5px;
+    margin-left: 15px;
+    font-size: 16px;
+    color: rgb(179, 148, 207);
+  }
+  
+  .additional-info p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+  
+  .additional-info{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: left;
+  }
+
+  .Games {
+    list-style: none;
+    padding-left: 20px;
+    font-size: 14px;
+  }
+  
+  .Games li {
+    margin-bottom: 5px;
+    justify-content: left;
+  }
+  
